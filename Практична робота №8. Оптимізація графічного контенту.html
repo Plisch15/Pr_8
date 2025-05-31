@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оптимізоване зображення</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Вітаю на сайті!</h1>
+
+  <h3> Адаптивне зображення</h3>
+  <!-- 🔥 Адаптивне зображення з WebP та fallback -->
+  <picture>
+    <source
+      srcset="
+        C:/Users/Al6/OneDrive/Робочий стіл/Практична робота №4. Створення інтерактивних елементів на сторінці/car-2255161_640.webp"
+      type="image/webp"
+    />
+    <img
+      src="C:/Users/Al6/OneDrive/Робочий стіл/Практична робота №4. Створення інтерактивних елементів на сторінці/car-2255161_640.jpg"
+      alt="Зображення автомобіля"
+      loading="lazy"
+    />
+  </picture>
+</div>
+
+<div class="image-container">
+  <h2>Векторне зображення (SVG)</h2>
+  <svg width="100" height="100" viewBox="0 0 100 100" fill="#4caf50" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="40" />
+  </svg>
+</div>
+
+<div class="image-container">
+  <h2>Іконка зі спрайту SVG</h2>
+  <svg style="display: none;">
+    <symbol id="icon-star" viewBox="0 0 24 24">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/>
+    </symbol>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#icon-star"></use>
+  </svg>
+</div>
+
+</body>
+</html>
